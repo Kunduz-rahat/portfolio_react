@@ -2,19 +2,20 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { NavBar } from "./components/NavBar";
 import { DotGroup } from "./components/DotGroup";
+import { Landing } from "./components/Landing";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  const isDesktop = useMediaQuery("(min-width:1060px)");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.screenY === 0) {
+      if (window.scrollY === 0) {
         setIsTopOfPage(true);
-      } else {
-        setIsTopOfPage(false);
+        setSelectedPage("home");
       }
+      if (window.scrollY !== 0) setIsTopOfPage(false);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,8 +28,14 @@ function App() {
         isTopOfPage={isTopOfPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && <DotGroup  setSelectedPage={setSelectedPage} selectedPage={selectedPage}/>}
+        {isDesktop && (
+          <DotGroup
+            setSelectedPage={setSelectedPage}
+            selectedPage={selectedPage}
+          />
+        )}
       </div>
+      <Landing setSelectedPage={setSelectedPage} />
     </div>
   );
 }
