@@ -35,7 +35,8 @@ function App() {
           />
         )}
       </div>
-      <Landing setSelectedPage={setSelectedPage} />
+   
+      <Landing setSelectedPage={setSelectedPage}/>
     </div>
   );
 }
