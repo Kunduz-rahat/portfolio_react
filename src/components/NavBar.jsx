@@ -24,28 +24,28 @@ export const NavBar = ({isTopOfPage, setSelectedPage, selectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full top-0 fixed py-6`}>
       <div className=" flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">КР</h4>
+        <h4 className="font-playfair text-3xl font-bold">K R</h4>
 
         {/* Desktop */}
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-opensans text-sm  font-semibold">
             <Link
-              page="Главное"
+              page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Навыки"
+              page="Skills"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Проекты"
+              page="Projects"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Контакт"
+              page="Contact"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

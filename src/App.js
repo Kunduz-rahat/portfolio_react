@@ -4,6 +4,9 @@ import { NavBar } from "./components/NavBar";
 import { DotGroup } from "./components/DotGroup";
 import { Landing } from "./components/Landing";
 import { motion } from "framer-motion";
+import { LineGradient } from "./components/LineGradient";
+import { MySkills } from "./components/MySkills";
+
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const isDesktop = useMediaQuery("(min-width:1060px)");
@@ -41,6 +44,10 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
+        <LineGradient/>
+        <div className="w-5/6 mx-auto md:h-full">
+          <MySkills/>
+        </div>
       </div>
    
       
