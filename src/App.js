@@ -3,7 +3,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { NavBar } from "./components/NavBar";
 import { DotGroup } from "./components/DotGroup";
 import { Landing } from "./components/Landing";
-
+import { motion } from "framer-motion";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const isDesktop = useMediaQuery("(min-width:1060px)");
@@ -34,9 +34,16 @@ function App() {
             selectedPage={selectedPage}
           />
         )}
+       <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
    
-      <Landing setSelectedPage={setSelectedPage}/>
+      
     </div>
   );
 }
