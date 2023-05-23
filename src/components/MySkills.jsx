@@ -134,7 +134,7 @@ export const MySkills = () => {
               Bibendum.
             </p>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="md:w-1/3 mt-10"
             initial="hidden"
             whileInView="visible"
@@ -214,7 +214,7 @@ export const MySkills = () => {
               Sagittis, amet netus fringilla netus lobortis odio sed platea.
               Bibendum.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
     );
