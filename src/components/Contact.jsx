@@ -72,7 +72,7 @@ export const Contact = () => {
               <form
                 target="_blank"
                 onSubmit={onSubmit}
-                action="https://www.google.com/"
+                action="https://formsubmit.co/rahatova.kunduz@gmail.com"
                 method="POST"
               >
                 <input
