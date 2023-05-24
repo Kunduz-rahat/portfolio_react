@@ -8,6 +8,7 @@ import { LineGradient } from "./components/LineGradient";
 import { MySkills } from "./components/MySkills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const isDesktop = useMediaQuery("(min-width:1060px)");
@@ -26,59 +27,61 @@ function App() {
   }, []);
   return (
     <div className="app bg-deep-blue">
-      <NavBar
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-        isTopOfPage={isTopOfPage}
-      />
-      <div className="w-5/6 mx-auto md:h-full">
-        {isDesktop && (
-          <DotGroup
-            setSelectedPage={setSelectedPage}
-            selectedPage={selectedPage}
-          />
-        )}
-       <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
-        >
-          <Landing setSelectedPage={setSelectedPage} />
-        </motion.div>
-        <LineGradient/>
-        <div className="w-5/6 mx-auto md:h-full ">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
-        >
-          <MySkills />
-        </motion.div>
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("projects")}
-        >
-         <Projects/>
-        </motion.div>
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("contact")}
-        >
-          <Contact />
-        </motion.div>
-      </div>
-      </div>
-   
-      
+    <NavBar
+      selectedPage={selectedPage}
+      setSelectedPage={setSelectedPage}
+      isTopOfPage={isTopOfPage}
+    />
+    <div className="w-5/6 mx-auto md:h-full">
+      {isDesktop && (
+        <DotGroup
+          setSelectedPage={setSelectedPage}
+          selectedPage={selectedPage}
+        />
+      )}
+     <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("home")}
+      >
+        <Landing setSelectedPage={setSelectedPage} />
+      </motion.div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto md:h-full ">
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("skills")}
+      >
+        <MySkills />
+      </motion.div>
     </div>
+    <LineGradient />
+    <div className="w-5/6 mx-auto">
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("projects")}
+      >
+       <Projects/>
+      </motion.div>
+    </div>
+    <LineGradient />
+    <div className="w-5/6 mx-auto md:h-full">
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("contact")}
+      >
+        <Contact />
+      </motion.div>
+     
+    </div>
+    <Footer/>
+    </div>
+ 
+  
+  </div>
   );
 }
 

@@ -45,7 +45,7 @@ export const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:grid md:grid-cols-3 md:justify-between mt-16 gap-32">
+      <div className="md:grid md:grid-cols-3 md:justify-between mt-16 gap-5">
         {/* HTML */}
         <motion.div
           className=" mt-10"
@@ -111,7 +111,7 @@ export const MySkills = () => {
         </motion.div>
           {/* React */}
           <motion.div
-          className=" mt-10"
+        className=" mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -132,7 +132,7 @@ export const MySkills = () => {
         {/* Redux */}
 
         <motion.div
-          className=" mt-10"
+        className=" mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -152,7 +152,7 @@ export const MySkills = () => {
         </motion.div>
         {/* TypeScript */}
         <motion.div
-          className=" mt-10"
+         className=" mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
