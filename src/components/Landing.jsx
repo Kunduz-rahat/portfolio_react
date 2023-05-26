@@ -3,7 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import { motion } from "framer-motion";
-import profile from "../assets/profile-image.png";
+import profile from "../assets/profile2.png";
 import { SocialIcons } from "./SocialIcons";
 export const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
