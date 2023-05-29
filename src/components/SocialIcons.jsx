@@ -1,6 +1,6 @@
-import telegram from "../assets/free-icon-telegram-logo-87413.png";
-import facebook from "../assets/free-icon-facebook-733547.png";
-import instagram from "../assets/free-icon-instagram-2111463.png";
+import telegram from "../assets/telegram.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
 
 export const SocialIcons = () => {
   return (
@@ -11,7 +11,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src={instagram}  className="w-[50px] "/>
+        <img alt="twitter-link" src={instagram}  className="w-[40px] "/>
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -19,7 +19,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="facebook-link" src={facebook}  className="w-[50px] " />
+        <img alt="facebook-link" src={facebook}  className="w-[40px] " />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -27,7 +27,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="telegram-link" className="w-[50px] " src={telegram} />
+        <img alt="telegram-link" className="w-[40px] " src={telegram} />
       </a>
      
     </div>

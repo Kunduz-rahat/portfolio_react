@@ -57,10 +57,10 @@ export const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+        <p className="mt-10 mb-10 ">
+          My projects make use of a vast variety of latest technology tools. My
+          best experience is to create NodeJS Back-end Projects, Front-end React
+          Project. Below are some of my projects.
         </p>
       </motion.div>
 

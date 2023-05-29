@@ -57,8 +57,7 @@ export const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          I'm Kunduz Rakhat. I'm working with newest front-end  frameworks like  React and Vue. 
           </p>
         </motion.div>
            {/* CALL TO ACTIONS */}
