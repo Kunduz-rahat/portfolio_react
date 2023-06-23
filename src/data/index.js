@@ -16,7 +16,7 @@ import youtube from '../assets/youtube.jpg'
         id: 2,
         name: 'YouTube Clone',
         desk: 'A search engine and YouTube video player, made with React.js.',
-        tags: ['React', 'RapidApi', 'Material Ui'],
+        tags: ['React',  'Material Ui', 'RapidApi'],
         code: 'https://github.com/Kunduz-rahat/youtube_clone',
         demo: 'https://youtube-clone-pyumwwp86-kunduz-rahat.vercel.app/',
         image: youtube
@@ -25,7 +25,7 @@ import youtube from '../assets/youtube.jpg'
         id: 3,
         name: 'Country App',
         desk: 'CountryApp is a source code application for getting information about countries, capitals.',
-        tags: ['React', 'SaSS', 'Redux', 'TypeScript'],
+        tags: ['React', 'SaSS', 'Redux', 'TypeScript', 'CountryApi'],
         code: 'https://github.com/Kunduz-rahat/countries_ts',
         demo: 'https://countries-kfewl0kfn-kunduz-rahat.vercel.app/',
         image: country
@@ -34,7 +34,7 @@ import youtube from '../assets/youtube.jpg'
         id: 4,
         name: 'Movie Application',
         desk: 'A simple application for viewing information about movies, trailers, actors',
-        tags: ['React', 'Redux', 'TailwindCss', 'TypeScript'],
+        tags: ['React', 'Redux', 'TailwindCss', 'TypeScript', 'TMDBApi'],
         code: 'https://github.com/Kunduz-rahat/movie-ts',
         demo: 'https://movie-h8t66otpc-kunduz-rahat.vercel.app/',
         image: cinema

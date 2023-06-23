@@ -124,7 +124,7 @@ export const Projects = () => {
                       {tag}
                     </p>
                   ))}
-                  <div className="text-white flex justify-between">
+                  <div className="text-white flex justify-between mt-4">
                     <a
                       className="cursor-pointer no-underline transition-transform"
                       href={project.demo}
